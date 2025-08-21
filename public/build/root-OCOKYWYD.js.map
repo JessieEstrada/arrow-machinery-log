@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../app/root.tsx"],
+  "sourcesContent": ["import type { LinksFunction } from \"@remix-run/node\";\nimport { Links, Meta, Outlet, Scripts, ScrollRestoration } from \"@remix-run/react\";\n\nimport \"./styles/tailwind.css?__remix_sideEffect__\";\n\nexport const links: LinksFunction = () => [\n{ rel: \"preconnect\", href: \"https://fonts.googleapis.com\" },\n{\n  rel: \"preconnect\",\n  href: \"https://fonts.gstatic.com\",\n  crossOrigin: \"anonymous\"\n},\n{\n  rel: \"stylesheet\",\n  href: \"https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap\"\n}];\n\n\nexport function Layout({ children }: {children: React.ReactNode;}) {\n  return (\n    <html lang=\"en\">\n      <head>\n        <meta charSet=\"utf-8\" />\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n        <Meta />\n        <Links />\n      </head>\n      <body>\n        {children}\n        <ScrollRestoration />\n        <Scripts />\n      </body>\n    </html>);\n\n}\n\nexport default function App() {\n  return <Outlet />;\n}"],
+  "mappings": ";;;;;;;;;;;AAsBQ;AAjBD,IAAM,QAAuB,MAAM;AAAA,EAC1C,EAAE,KAAK,cAAc,MAAM,+BAA+B;AAAA,EAC1D;AAAA,IACE,KAAK;AAAA,IACL,MAAM;AAAA,IACN,aAAa;AAAA,EACf;AAAA,EACA;AAAA,IACE,KAAK;AAAA,IACL,MAAM;AAAA,EACR;AAAC;AAqBc,SAAR,MAAuB;AAC5B,SAAO,mDAAC,YAAD;AAAA;AAAA;AAAA;AAAA,SAAQ;AACjB;",
+  "names": []
+}
