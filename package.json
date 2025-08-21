@@ -10,6 +10,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@remix-run/node": "^2.17.0",
     "@remix-run/react": "^2.17.0",
     "isbot": "^4.1.0",
